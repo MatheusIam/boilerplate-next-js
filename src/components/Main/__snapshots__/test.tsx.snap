@@ -5,7 +5,7 @@ exports[`<Main /> should render the heading 1`] = `
   class="sc-beyTiQ kaIBlV"
 >
   <h1>
-    React Avançado
+    Olá mundo, Matheus Iam!!
   </h1>
 </main>
 `;
