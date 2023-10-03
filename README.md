@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Boilerplate Next.js
 
-## Getting Started
+Este boilerplate Next.js fornece uma configuração inicial para desenvolver aplicativos Next.js com TypeScript, React, styled-components e Storybook.
 
-First, run the development server:
+## Instalação
 
-```bash
+Para instalar o boilerplate, clone o repositório GitHub para o seu computador local e execute os seguintes comandos:
+
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Isso iniciará o servidor de desenvolvimento Next.js na porta 3000. Você pode acessar o aplicativo em execução em [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Comandos
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+O boilerplate inclui os seguintes comandos:
 
-## Learn More
+- `dev`: Inicia o servidor de desenvolvimento Next.js.
+- `build`: Compila o aplicativo Next.js para produção.
+- `test`: Executa os testes de unidade do Jest.
+- `test:watch`: Executa os testes de unidade do Jest em modo de observação.
+- `test:ci`: Executa os testes de unidade do Jest em modo de CI.
+- `start`: Inicia o aplicativo Next.js compilado em produção.
+- `lint`: Linta o código do aplicativo com ESLint.
+- `prepare`: Instala os hooks do Husky.
+- `storybook`: Inicia o Storybook.
+- `build-storybook`: Compila o Storybook.
 
-To learn more about Next.js, take a look at the following resources:
+## Dependências
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O boilerplate depende dos seguintes pacotes:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- @storybook/nextjs
+- next
+- react
+- react-dom
+- styled-components
 
-## Deploy on Vercel
+## DevDependencies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+O boilerplate também depende dos seguintes pacotes de desenvolvimento:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- @storybook/addon-essentials
+- @storybook/addon-interactions
+- @storybook/addon-links
+- @storybook/addon-onboarding
+- @storybook/blocks
+- @storybook/react
+- @storybook/react-webpack5
+- @storybook/testing-library
+- @testing-library/jest-dom
+- @testing-library/react
+- @testing-library/user-event
+- @types/jest
+- @types/node
+- @types/react
+- @types/react-dom
+- @typescript-eslint/eslint-plugin
+- @typescript-eslint/parser
+- eslint
+- eslint-config-next
+- eslint-config-prettier
+- eslint-plugin-react
+- eslint-plugin-storybook
+- husky
+- jest
+- jest-environment-jsdom
+- jest-styled-components
+- lint-staged
+- prettier
+- storybook
+- typescript
+
+## Exemplo de uso
+
+Isso iniciará o servidor de desenvolvimento Next.js na porta 3000. Você pode acessar o aplicativo em execução em [http://localhost:3000](http://localhost:3000).
+
+Para criar uma nova história do Storybook, execute o seguinte comando:
+
+npx storybook init
+
+Isso criará uma nova história no arquivo `src/stories/index.stories.js`.
+
+Para executar o Storybook, execute o seguinte comando:
+
+npm run storybook
+
+Isso iniciará o Storybook na porta 6006. Você pode acessar o Storybook em execução em [http://localhost:6006](http://localhost:6006).
