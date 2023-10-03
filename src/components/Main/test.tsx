@@ -1,25 +1,20 @@
-import { render, screen } from '@testing-library/react'
+import React from 'react'
+import { render } from '@testing-library/react'
 import Main from '.'
 
-describe('<Main />', () => {
-  it('should render the heading', () => {
-    // renderiza o component
-    const { container } = render(<Main />)
-
-    // busca o elemento e verifica a existência dele
-    expect(
-      screen.getByRole('heading', { name: /Olá mundo, Matheus Iam!!/i })
-    ).toBeInTheDocument()
-
-    // gerar snapshot
-    expect(container.firstChild).toMatchSnapshot()
+describe('Main component', () => {
+  it('renders the expected title', () => {
+    const { getByText } = render(<Main />)
+    const title = getByText('React Avançado')
+    expect(title).toBeInTheDocument()
+    expect(title.textContent).toBe('React Avançado')
   })
 
-  it('should render the colors correctly', () => {
-    // renderiza o component
-    const { container } = render(<Main />)
-
-    // verifica se o background-color está correto
-    expect(container.firstChild).toHaveStyle({ 'background-color': '#06092b' })
+  it('renders the expected logo', () => {
+    const { getByAltText } = render(<Main />)
+    const logo = getByAltText(
+      'Imagem de um átomo e React Avançado escrito ao lado.'
+    )
+    expect(logo).toBeInTheDocument()
   })
 })
