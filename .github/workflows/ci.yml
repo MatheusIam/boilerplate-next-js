@@ -14,14 +14,14 @@ jobs:
           node-version: 18.x
           cache: 'npm'
 
-      - name: Instalar dependencias
+      - name: Install dependencies
         run: npm install
 
-      - name: Rodar o lint
-        uses: npm run lint
+      - name: Linting
+        run: npm run lint
 
-      - name: Rodar o teste
-        run: npm run test
+      - name: Testing
+        run: npm run test:ci
 
-      - name: Buildar a aplicacao
+      - name: Build
         run: npm run build
