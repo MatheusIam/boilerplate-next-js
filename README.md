@@ -1,6 +1,6 @@
 # Boilerplate Next.js
 
-Este boilerplate Next.js fornece uma configuração inicial para desenvolver aplicativos Next.js com TypeScript, React, styled-components e Storybook.
+Este boilerplate Next.js fornece uma configuração inicial para desenvolver aplicativos Next.js com App Router, styled-components e Storybook.
 
 ## Instalação
 
