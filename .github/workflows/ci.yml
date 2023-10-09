@@ -18,7 +18,7 @@ jobs:
         run: npm install
 
       - name: Rodar o lint
-        nun: npm run lint
+        run: npm run lint
 
       - name: Rodar o teste
         run: npm run test
